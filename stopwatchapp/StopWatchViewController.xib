@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StopWatchViewController">
+            <connections>
+                <outlet property="button1" destination="j2g-yK-xL9" id="3s6-4p-bss"/>
+                <outlet property="button2" destination="C22-OK-yav" id="sZz-xZ-2Xz"/>
+                <outlet property="lbl1" destination="jX5-Fj-Ln2" id="I4m-pu-Erc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-Fj-Ln2">
+                    <rect key="frame" x="63" y="152" width="286" height="48"/>
+                    <color key="backgroundColor" red="0.98997283469242414" green="1" blue="0.91891436133792281" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2g-yK-xL9">
+                    <rect key="frame" x="63" y="313" width="286" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.69417964237120822" blue="0.11937731597443002" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="START"/>
+                    <connections>
+                        <action selector="start:" destination="-1" eventType="touchUpInside" id="2lv-cq-9zZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C22-OK-yav">
+                    <rect key="frame" x="63" y="405" width="286" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.45547194316618833" blue="0.27978425929121187" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="RESET"/>
+                    <connections>
+                        <action selector="reset:" destination="-1" eventType="touchUpInside" id="I8C-rW-W1E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.79218311369745309" green="1" blue="0.84574062740431932" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+</document>
